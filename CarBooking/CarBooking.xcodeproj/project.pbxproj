@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92491D348BE511817388C0FE /* Pods_CarBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */; };
 		CFC9A2322A1D59DA00948A80 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */; };
-		CFC9A2342A1D59DA00948A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2332A1D59DA00948A80 /* ContentView.swift */; };
 		CFC9A2362A1D59DC00948A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2352A1D59DC00948A80 /* Assets.xcassets */; };
 		CFC9A2392A1D59DC00948A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2382A1D59DC00948A80 /* Preview Assets.xcassets */; };
+		CFC9A2552A1D5AD400948A80 /* SampleData_success.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A24E2A1D5AD400948A80 /* SampleData_success.json */; };
+		CFC9A2562A1D5AD400948A80 /* SampleData_no_content.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A24F2A1D5AD400948A80 /* SampleData_no_content.json */; };
+		CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2502A1D5AD400948A80 /* CarBookingTarget.swift */; };
+		CFC9A2592A1D5AD400948A80 /* CarsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2542A1D5AD400948A80 /* CarsResponse.swift */; };
+		CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A25A2A1E412100948A80 /* CarListView.swift */; };
+		CFC9A25F2A1E41AE00948A80 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A25E2A1E41AE00948A80 /* CarListViewModel.swift */; };
+		CFC9A2622A1E47C200948A80 /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2612A1E47C200948A80 /* CarsService.swift */; };
+		CFC9A2652A1E481400948A80 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2642A1E481400948A80 /* AppError.swift */; };
+		CFC9A2682A1EB74B00948A80 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2672A1EB74B00948A80 /* CarCell.swift */; };
+		CFC9A26D2A1EBF6800948A80 /* Color+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */; };
+		CFC9A2712A1EC5B700948A80 /* Double+SimplifiedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.debug.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
+		3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9A22E2A1D59DA00948A80 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
-		CFC9A2332A1D59DA00948A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFC9A2352A1D59DC00948A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC9A2382A1D59DC00948A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFC9A24E2A1D5AD400948A80 /* SampleData_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData_success.json; sourceTree = "<group>"; };
+		CFC9A24F2A1D5AD400948A80 /* SampleData_no_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData_no_content.json; sourceTree = "<group>"; };
+		CFC9A2502A1D5AD400948A80 /* CarBookingTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarBookingTarget.swift; sourceTree = "<group>"; };
+		CFC9A2542A1D5AD400948A80 /* CarsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsResponse.swift; sourceTree = "<group>"; };
+		CFC9A25A2A1E412100948A80 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		CFC9A25E2A1E41AE00948A80 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		CFC9A2612A1E47C200948A80 /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
+		CFC9A2642A1E481400948A80 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		CFC9A2672A1EB74B00948A80 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Name.swift"; sourceTree = "<group>"; };
+		CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+SimplifiedPrice.swift"; sourceTree = "<group>"; };
+		F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.release.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92491D348BE511817388C0FE /* Pods_CarBooking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08BBFD20F7119DBE160770DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */,
+				F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CFC9A2252A1D59DA00948A80 = {
 			isa = PBXGroup;
 			children = (
 				CFC9A2302A1D59DA00948A80 /* CarBooking */,
 				CFC9A22F2A1D59DA00948A80 /* Products */,
+				08BBFD20F7119DBE160770DA /* Pods */,
+				F29E975321D9B5B4B1B551B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */,
-				CFC9A2332A1D59DA00948A80 /* ContentView.swift */,
+				CFC9A2602A1E47A500948A80 /* Services */,
+				CFC9A25C2A1E414E00948A80 /* Views */,
+				CFC9A2532A1D5AD400948A80 /* Models */,
+				CFC9A24D2A1D5AD400948A80 /* Network */,
+				CFC9A2632A1E480300948A80 /* Utils */,
+				CFC9A26B2A1EBF5200948A80 /* Extensions */,
 				CFC9A2352A1D59DC00948A80 /* Assets.xcassets */,
 				CFC9A2372A1D59DC00948A80 /* Preview Content */,
 			);
@@ -67,6 +108,91 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CFC9A24D2A1D5AD400948A80 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2722A1ECD4400948A80 /* Stubs */,
+				CFC9A2502A1D5AD400948A80 /* CarBookingTarget.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFC9A2532A1D5AD400948A80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2542A1D5AD400948A80 /* CarsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFC9A25C2A1E414E00948A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A25D2A1E419900948A80 /* CarList */,
+				CFC9A2662A1EB73C00948A80 /* CarCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFC9A25D2A1E419900948A80 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A25A2A1E412100948A80 /* CarListView.swift */,
+				CFC9A25E2A1E41AE00948A80 /* CarListViewModel.swift */,
+			);
+			path = CarList;
+			sourceTree = "<group>";
+		};
+		CFC9A2602A1E47A500948A80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2612A1E47C200948A80 /* CarsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CFC9A2632A1E480300948A80 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2642A1E481400948A80 /* AppError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFC9A2662A1EB73C00948A80 /* CarCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2672A1EB74B00948A80 /* CarCell.swift */,
+			);
+			path = CarCell;
+			sourceTree = "<group>";
+		};
+		CFC9A26B2A1EBF5200948A80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */,
+				CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFC9A2722A1ECD4400948A80 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A24E2A1D5AD400948A80 /* SampleData_success.json */,
+				CFC9A24F2A1D5AD400948A80 /* SampleData_no_content.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		F29E975321D9B5B4B1B551B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFC9A23C2A1D59DC00948A80 /* Build configuration list for PBXNativeTarget "CarBooking" */;
 			buildPhases = (
+				97DB8CC83682C0B44EFA087E /* [CP] Check Pods Manifest.lock */,
 				CFC9A22A2A1D59DA00948A80 /* Sources */,
 				CFC9A22B2A1D59DA00948A80 /* Frameworks */,
 				CFC9A22C2A1D59DA00948A80 /* Resources */,
+				087E6FE8A87401752C44241F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +253,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC9A2562A1D5AD400948A80 /* SampleData_no_content.json in Resources */,
 				CFC9A2392A1D59DC00948A80 /* Preview Assets.xcassets in Resources */,
 				CFC9A2362A1D59DC00948A80 /* Assets.xcassets in Resources */,
+				CFC9A2552A1D5AD400948A80 /* SampleData_success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		087E6FE8A87401752C44241F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DB8CC83682C0B44EFA087E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarBooking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFC9A22A2A1D59DA00948A80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC9A2342A1D59DA00948A80 /* ContentView.swift in Sources */,
+				CFC9A25F2A1E41AE00948A80 /* CarListViewModel.swift in Sources */,
+				CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */,
+				CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */,
+				CFC9A2592A1D5AD400948A80 /* CarsResponse.swift in Sources */,
+				CFC9A2622A1E47C200948A80 /* CarsService.swift in Sources */,
 				CFC9A2322A1D59DA00948A80 /* CarBookingApp.swift in Sources */,
+				CFC9A2682A1EB74B00948A80 /* CarCell.swift in Sources */,
+				CFC9A26D2A1EBF6800948A80 /* Color+Name.swift in Sources */,
+				CFC9A2652A1E481400948A80 /* AppError.swift in Sources */,
+				CFC9A2712A1EC5B700948A80 /* Double+SimplifiedPrice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +441,7 @@
 		};
 		CFC9A23D2A1D59DC00948A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +470,7 @@
 		};
 		CFC9A23E2A1D59DC00948A80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
