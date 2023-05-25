@@ -54,40 +54,11 @@ struct FilterView: View {
                 VStack {
                     List {
 
-                        Section(header: Text("Price").font(.title3).fontWeight(.bold)) {
-                            TextField("Minimum", text: $minPrice)
-                            TextField("Maximum", text: $maxPrice)
-                        }
-                        .keyboardType(.numberPad)
-                        .focused($inputIsFocused)
+                        priceSectionView
 
-                        Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
-                            ForEach(Color.availableColorsNames(), id: \.self) { color in
-                                CheckListItem(isChecked: filterColors.contains(color), title: color) { isChecked in
-                                    if isChecked {
-                                        filterColors.insert(color)
-                                    } else {
-                                        filterColors.remove(color)
-                                    }
-                                }
-                            }
-                        }
+                        colorSectionView
 
-                        HStack {
-
-                            Spacer()
-
-                            Text("Apply")
-                                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
-                                .foregroundColor(Color.white)
-                                .background(Color.blue)
-                                .clipShape(Capsule())
-                                .onTapGesture {
-                                    filterCriteria.update(colors: filterColors, minPrice: minPrice, maxPrice: maxPrice)
-                                }
-
-                            Spacer()
-                        }
+                        applySectionView
 
                     }
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
@@ -102,6 +73,47 @@ struct FilterView: View {
         }
         .onAppear {
             filterColors = filterCriteria.colors
+        }
+    }
+
+    var priceSectionView: some View {
+        Section(header: Text("Price").font(.title3).fontWeight(.bold)) {
+            TextField("Minimum", text: $minPrice)
+            TextField("Maximum", text: $maxPrice)
+        }
+        .keyboardType(.numberPad)
+        .focused($inputIsFocused)
+    }
+
+    var colorSectionView: some View {
+        Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
+            ForEach(Color.availableColorsNames(), id: \.self) { color in
+                CheckListItem(isChecked: filterColors.contains(color), title: color) { isChecked in
+                    if isChecked {
+                        filterColors.insert(color)
+                    } else {
+                        filterColors.remove(color)
+                    }
+                }
+            }
+        }
+    }
+
+    var applySectionView: some View {
+        HStack {
+
+            Spacer()
+
+            Text("Apply")
+                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                .foregroundColor(Color.white)
+                .background(Color.blue)
+                .clipShape(Capsule())
+                .onTapGesture {
+                    filterCriteria.update(colors: filterColors, minPrice: minPrice, maxPrice: maxPrice)
+                }
+
+            Spacer()
         }
     }
 }
