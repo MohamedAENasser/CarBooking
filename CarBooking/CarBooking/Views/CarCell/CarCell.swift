@@ -29,6 +29,20 @@ struct CarCell: View {
     }
 
     var brandView: some View {
+        if UIImage(named: car.brand.lowercased()) == nil {
+            return AnyView(brandName(car.brand.lowercased()))
+        } else {
+            return AnyView(brandImage(car.brand.lowercased()))
+        }
+    }
+
+    func brandImage(_ brand: String) -> some View {
+        Image(car.brand.lowercased())
+            .resizable()
+            .frame(width: 60, height: 60, alignment: .center)
+    }
+
+    func brandName(_ brand: String) -> some View {
         Text(car.brand)
             .font(Font.title3.bold())
             .padding(6)
