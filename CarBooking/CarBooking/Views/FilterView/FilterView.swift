@@ -56,6 +56,10 @@ struct FilterView: View {
                 VStack {
                     List {
 
+                        if !tempFilterCriteria.noFiltersApplied {
+                            resetView
+                        }
+
                         priceSectionView
 
                         colorSectionView
@@ -75,6 +79,18 @@ struct FilterView: View {
         }
         .onAppear {
             tempFilterCriteria = filterCriteria
+        }
+    }
+
+    var resetView: some View {
+        HStack {
+            Image("slider.horizontal.2.gobackward")
+            Text("Reset all filters")
+        }
+        .foregroundColor(.blue)
+        .onTapGesture {
+            filterCriteria.reset()
+            tempFilterCriteria.reset()
         }
     }
 

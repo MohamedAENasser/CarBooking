@@ -9,5 +9,6 @@ import Foundation
 
 enum AppState {
     case loading
-    case success([Car])
+    case success(_ fetchedCarList: [Car])
+    case refresh(_ filteredCarList: [Car])
 }

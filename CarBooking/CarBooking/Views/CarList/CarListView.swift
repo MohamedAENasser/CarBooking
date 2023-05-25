@@ -15,7 +15,7 @@ struct CarListView: View {
         ZStack {
             //MARK: - Handle App States
             switch viewModel.state {
-            case .success(let carList):
+            case let .success(carList), let .refresh(carList):
                 carListView(carList: carList)
             case .loading:
                 LoadingView()
@@ -54,7 +54,7 @@ struct CarListView: View {
                 .resizable()
                 .renderingMode(.template)
                 .frame(width: 30, height: 30, alignment: .center)
-                .foregroundColor(isFilterViewOpened ? Color.blue : Color.red)
+                .foregroundColor(viewModel.filterCriteria.noFiltersApplied ? Color.black : Color.blue)
         }
     }
 }
