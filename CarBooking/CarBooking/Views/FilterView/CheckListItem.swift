@@ -11,6 +11,7 @@ struct CheckListItem: View {
     @State var isChecked: Bool = false
 
     var title: String
+    var onTapAction: ((Bool) -> Void)?
 
     var body: some View {
         HStack{
@@ -30,6 +31,7 @@ struct CheckListItem: View {
         }
         .onTapGesture {
             isChecked.toggle()
+            onTapAction?(isChecked)
         }
     }
 }

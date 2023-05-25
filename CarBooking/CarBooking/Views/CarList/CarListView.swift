@@ -30,7 +30,7 @@ struct CarListView: View {
                 }
             }
 
-            FilterView(isFilterViewVisible: $isFilterViewOpened)
+            FilterView(isFilterViewVisible: $isFilterViewOpened, filterCriteria: $viewModel.filterCriteria)
         }
     }
 

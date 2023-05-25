@@ -10,10 +10,13 @@ import SwiftUI
 struct FilterView: View {
 
     @Binding var isFilterViewVisible: Bool
+    @Binding var filterCriteria: FilterCriteria
+
+    @FocusState private var inputIsFocused: Bool
 
     @State private var minPrice: String = ""
     @State private var maxPrice: String = ""
-    @FocusState private var inputIsFocused: Bool
+    @State private var filterColors: Set<String> = []
 
     let screenWidth = UIScreen.main.bounds.size.width
     var filterViewWidth = UIScreen.main.bounds.size.width * 0.6
@@ -52,16 +55,38 @@ struct FilterView: View {
                     List {
 
                         Section(header: Text("Price").font(.title3).fontWeight(.bold)) {
-                            TextField("Min", text: $minPrice)
-                            TextField("Max", text: $maxPrice)
+                            TextField("Minimum", text: $minPrice)
+                            TextField("Maximum", text: $maxPrice)
                         }
                         .keyboardType(.numberPad)
                         .focused($inputIsFocused)
 
                         Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
                             ForEach(Color.availableColorsNames(), id: \.self) { color in
-                                CheckListItem(title: color)
+                                CheckListItem(isChecked: filterColors.contains(color), title: color) { isChecked in
+                                    if isChecked {
+                                        filterColors.insert(color)
+                                    } else {
+                                        filterColors.remove(color)
+                                    }
+                                }
                             }
+                        }
+
+                        HStack {
+
+                            Spacer()
+
+                            Text("Apply")
+                                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                                .foregroundColor(Color.white)
+                                .background(Color.blue)
+                                .clipShape(Capsule())
+                                .onTapGesture {
+                                    filterCriteria.update(colors: filterColors, minPrice: minPrice, maxPrice: maxPrice)
+                                }
+
+                            Spacer()
                         }
 
                     }
@@ -75,7 +100,8 @@ struct FilterView: View {
 
             Spacer()
         }
+        .onAppear {
+            filterColors = filterCriteria.colors
+        }
     }
-
-    
 }
