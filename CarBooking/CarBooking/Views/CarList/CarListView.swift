@@ -13,8 +13,25 @@ struct CarListView: View {
 
     var body: some View {
         ZStack {
+            //MARK: - Handle App States
+            switch viewModel.state {
+            case .success(let carList):
+                carListView(carList: carList)
+            case .loading:
+                LoadingView()
+            }
+        }
+        .onAppear {
+            Task {
+                await viewModel.getAvailableCars()
+            }
+        }
+    }
+
+    func carListView(carList: [Car]) -> some View {
+        ZStack {
             NavigationView {
-                List(viewModel.cars, id: \.id) { car in
+                List(carList, id: \.id) { car in
                     CarCell(car: car)
                 }
                 .navigationTitle("Available Cars")
@@ -22,11 +39,6 @@ struct CarListView: View {
 
                 .toolbar {
                     filterButtonView
-                }
-            }
-            .onAppear {
-                Task {
-                    await viewModel.getAvailableCars()
                 }
             }
 

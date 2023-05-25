@@ -11,12 +11,11 @@ import Combine
 
 class CarListViewModel: ObservableObject {
     private var carsService: CarsServiceProtocol
-    @Published var cars: [Car]
+    @Published var state: AppState = .loading
     @Published var filterCriteria: FilterCriteria
 
-    init(carsService: CarsServiceProtocol = CarsService(), cars: [Car] = [], filterCriteria: FilterCriteria = FilterCriteria()) {
+    init(carsService: CarsServiceProtocol = CarsService(), filterCriteria: FilterCriteria = FilterCriteria()) {
         self.carsService = carsService
-        self.cars = cars
         self.filterCriteria = filterCriteria
 
         subscribeForFilterChanges()
@@ -24,10 +23,11 @@ class CarListViewModel: ObservableObject {
 
     @MainActor
     func getAvailableCars() async {
+        state = .loading
         let result = await carsService.getAvailableCars()
         switch result {
         case .success(let carList):
-            cars = carList
+            state = .success(carList)
         case .failure(let error):
             print(error) // TODO: Error Handling
         }

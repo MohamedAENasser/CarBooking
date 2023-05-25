@@ -44,7 +44,11 @@ final class CarsService: CarsServiceProtocol {
 
                 }, receiveValue: { response in
 
-                    continuation.resume(returning: .success(response))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Simulate loading state
+
+                        continuation.resume(returning: .success(response))
+
+                    }
 
                 })
 
