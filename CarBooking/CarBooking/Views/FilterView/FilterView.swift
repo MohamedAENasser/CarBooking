@@ -111,6 +111,8 @@ struct FilterView: View {
                 .clipShape(Capsule())
                 .onTapGesture {
                     filterCriteria.update(colors: filterColors, minPrice: minPrice, maxPrice: maxPrice)
+                    inputIsFocused = false
+                    isFilterViewVisible.toggle()
                 }
 
             Spacer()
