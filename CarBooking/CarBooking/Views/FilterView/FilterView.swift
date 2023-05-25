@@ -9,14 +9,16 @@ import SwiftUI
 
 struct FilterView: View {
 
-    @Binding var isFilterViewVisible: Bool
+    @Binding var isFilterViewVisible: Bool {
+        didSet {
+            tempFilterCriteria = filterCriteria
+        }
+    }
     @Binding var filterCriteria: FilterCriteria
 
     @FocusState private var inputIsFocused: Bool
 
-    @State private var minPrice: String = ""
-    @State private var maxPrice: String = ""
-    @State private var filterColors: Set<String> = []
+    @State private var tempFilterCriteria: FilterCriteria = FilterCriteria()
 
     let screenWidth = UIScreen.main.bounds.size.width
     var filterViewWidth = UIScreen.main.bounds.size.width * 0.6
@@ -72,14 +74,14 @@ struct FilterView: View {
             Spacer()
         }
         .onAppear {
-            filterColors = filterCriteria.colors
+            tempFilterCriteria = filterCriteria
         }
     }
 
     var priceSectionView: some View {
         Section(header: Text("Price").font(.title3).fontWeight(.bold)) {
-            TextField("Minimum", text: $minPrice)
-            TextField("Maximum", text: $maxPrice)
+            TextField("Minimum", text: $tempFilterCriteria.minPrice)
+            TextField("Maximum", text: $tempFilterCriteria.maxPrice)
         }
         .keyboardType(.numberPad)
         .focused($inputIsFocused)
@@ -87,13 +89,11 @@ struct FilterView: View {
 
     var colorSectionView: some View {
         Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
-            ForEach(Color.availableColorsNames(), id: \.self) { color in
-                CheckListItem(isChecked: filterColors.contains(color), title: color) { isChecked in
-                    if isChecked {
-                        filterColors.insert(color)
-                    } else {
-                        filterColors.remove(color)
-                    }
+            ColorPaletteView(colorItems: Color.availableColorsNames().map { ColorItem(name: $0, isChecked: tempFilterCriteria.colors.contains($0)) }) { index, isChecked in
+                if isChecked {
+                    tempFilterCriteria.colors.insert(Color.availableColorsNames()[index])
+                } else {
+                    tempFilterCriteria.colors.remove(Color.availableColorsNames()[index])
                 }
             }
         }
@@ -110,7 +110,7 @@ struct FilterView: View {
                 .background(Color.blue)
                 .clipShape(Capsule())
                 .onTapGesture {
-                    filterCriteria.update(colors: filterColors, minPrice: minPrice, maxPrice: maxPrice)
+                    filterCriteria = tempFilterCriteria
                     inputIsFocused = false
                     isFilterViewVisible.toggle()
                 }
