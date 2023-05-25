@@ -22,6 +22,8 @@
 		CFC9A2682A1EB74B00948A80 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2672A1EB74B00948A80 /* CarCell.swift */; };
 		CFC9A26D2A1EBF6800948A80 /* Color+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */; };
 		CFC9A2712A1EC5B700948A80 /* Double+SimplifiedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */; };
+		CFC9A2752A1ED23700948A80 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2742A1ED23700948A80 /* FilterView.swift */; };
+		CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		CFC9A2672A1EB74B00948A80 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Name.swift"; sourceTree = "<group>"; };
 		CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+SimplifiedPrice.swift"; sourceTree = "<group>"; };
+		CFC9A2742A1ED23700948A80 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 		F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.release.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 			children = (
 				CFC9A25D2A1E419900948A80 /* CarList */,
 				CFC9A2662A1EB73C00948A80 /* CarCell */,
+				CFC9A2732A1ED22300948A80 /* FilterView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +188,15 @@
 				CFC9A24F2A1D5AD400948A80 /* SampleData_no_content.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		CFC9A2732A1ED22300948A80 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2742A1ED23700948A80 /* FilterView.swift */,
+				CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */,
+			);
+			path = FilterView;
 			sourceTree = "<group>";
 		};
 		F29E975321D9B5B4B1B551B7 /* Frameworks */ = {
@@ -309,8 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC9A2752A1ED23700948A80 /* FilterView.swift in Sources */,
 				CFC9A25F2A1E41AE00948A80 /* CarListViewModel.swift in Sources */,
 				CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */,
+				CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */,
 				CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */,
 				CFC9A2592A1D5AD400948A80 /* CarsResponse.swift in Sources */,
 				CFC9A2622A1E47C200948A80 /* CarsService.swift in Sources */,

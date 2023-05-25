@@ -9,19 +9,40 @@ import SwiftUI
 
 struct CarListView: View {
     @StateObject private var viewModel = CarListViewModel()
+    @State private var isFilterViewOpened = false
 
     var body: some View {
-        NavigationView {
-            List(viewModel.cars, id: \.id) { car in
-                CarCell(car: car)
-            }
-            .navigationTitle("Available Cars")
-        }
+        ZStack {
+            NavigationView {
+                List(viewModel.cars, id: \.id) { car in
+                    CarCell(car: car)
+                }
+                .navigationTitle("Available Cars")
+                .navigationBarTitleDisplayMode(.inline)
 
-        .onAppear {
-            Task {
-                await viewModel.getAvailableCars()
+                .toolbar {
+                    filterButtonView
+                }
             }
+            .onAppear {
+                Task {
+                    await viewModel.getAvailableCars()
+                }
+            }
+
+            FilterView(isFilterViewVisible: $isFilterViewOpened)
+        }
+    }
+
+    var filterButtonView: some View {
+        Button {
+            isFilterViewOpened.toggle()
+        } label: {
+            Image("FilterIcon")
+                .resizable()
+                .renderingMode(.template)
+                .frame(width: 30, height: 30, alignment: .center)
+                .foregroundColor(isFilterViewOpened ? Color.blue : Color.red)
         }
     }
 }
