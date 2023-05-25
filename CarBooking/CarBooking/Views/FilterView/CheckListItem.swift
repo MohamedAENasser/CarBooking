@@ -22,7 +22,11 @@ struct CheckListItem: View {
             Spacer()
             Color[title]
                 .frame(width: 20, height: 20, alignment: .center)
-                .clipShape(Capsule())
+                .clipShape(Circle())
+                .overlay {
+                    Circle()
+                        .stroke(.black)
+                }
         }
         .onTapGesture {
             isChecked.toggle()

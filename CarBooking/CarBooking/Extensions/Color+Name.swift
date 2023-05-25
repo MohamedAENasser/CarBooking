@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Color {
-    static subscript(name: String) -> Color {
+    static subscript(name: String) -> Color? {
         switch name.lowercased() {
         case  "red": return Color.red
         case  "orange": return Color.orange
@@ -26,7 +26,27 @@ extension Color {
         case  "gray": return Color.gray
         case  "black": return Color.black
 
-        default: return Color.accentColor
+        default: return nil
         }
+    }
+
+    static func availableColorsNames() -> [String] {
+        [
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "mint",
+            "teal",
+            "cyan",
+            "blue",
+            "indigo",
+            "purple",
+            "pink",
+            "brown",
+            "white",
+            "gray",
+            "black"
+        ]
     }
 }

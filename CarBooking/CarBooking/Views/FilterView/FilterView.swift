@@ -50,11 +50,6 @@ struct FilterView: View {
 
                 VStack {
                     List {
-                        Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
-                            ForEach(["Red", "Green", "Blue"], id: \.self) { color in
-                                CheckListItem(title: color)
-                            }
-                        }
 
                         Section(header: Text("Price").font(.title3).fontWeight(.bold)) {
                             TextField("Min", text: $minPrice)
@@ -62,6 +57,13 @@ struct FilterView: View {
                         }
                         .keyboardType(.numberPad)
                         .focused($inputIsFocused)
+
+                        Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
+                            ForEach(Color.availableColorsNames(), id: \.self) { color in
+                                CheckListItem(title: color)
+                            }
+                        }
+
                     }
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                     .listStyle(.grouped)
