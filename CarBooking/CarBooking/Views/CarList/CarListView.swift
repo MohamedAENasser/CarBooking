@@ -27,6 +27,12 @@ struct CarListView: View {
                 }, onResetAllFiltersAction: {
                     viewModel.resetAllFilters()
                 })
+            case .failure(let error):
+                ErrorStateView(error: error) {
+                    Task {
+                        await viewModel.getAvailableCars()
+                    }
+                }
             }
         }
         .onAppear {

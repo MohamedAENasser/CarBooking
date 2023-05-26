@@ -36,7 +36,7 @@ class CarListViewModel: ObservableObject {
                 state = .success(carList)
             }
         case .failure(let error):
-            print(error) // TODO: Error Handling
+            state = .failure(error)
         }
     }
 }

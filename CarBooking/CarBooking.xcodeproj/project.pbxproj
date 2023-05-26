@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92491D348BE511817388C0FE /* Pods_CarBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */; };
+		CF63388D2A216524006CA160 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF63388C2A216524006CA160 /* ErrorStateView.swift */; };
 		CF86AF7B2A20EE17007CBF18 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */; };
 		CF86AF7D2A20F71D007CBF18 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */; };
 		CFC9A2322A1D59DA00948A80 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.debug.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
 		3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF63388C2A216524006CA160 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 		CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		CFC9A22E2A1D59DA00948A80 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +223,7 @@
 			children = (
 				CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */,
 				CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */,
+				CF63388C2A216524006CA160 /* ErrorStateView.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			files = (
 				CFC9A2752A1ED23700948A80 /* FilterView.swift in Sources */,
 				CFC9A25F2A1E41AE00948A80 /* CarListViewModel.swift in Sources */,
+				CF63388D2A216524006CA160 /* ErrorStateView.swift in Sources */,
 				CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */,
 				CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */,
 				CFC9A2772A1EEA3F00948A80 /* ColorPaletteView.swift in Sources */,

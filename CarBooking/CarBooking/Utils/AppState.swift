@@ -15,6 +15,7 @@ enum EmptyState {
 enum AppState {
     case loading
     case success(_ fetchedCarList: [Car])
+    case failure(AppError)
     case refresh(_ filteredCarList: [Car])
     case empty(EmptyState)
 }
