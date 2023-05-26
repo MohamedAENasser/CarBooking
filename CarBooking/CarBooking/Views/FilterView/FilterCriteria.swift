@@ -16,8 +16,18 @@ struct FilterCriteria {
         colors.isEmpty && minPrice.isEmpty && maxPrice.isEmpty
     }
 
-    mutating func reset() {
+    mutating func resetAll() {
         colors = []
+        minPrice = ""
+        maxPrice = ""
+    }
+
+    mutating func resetColors() {
+        colors = []
+    }
+
+
+    mutating func resetPrice() {
         minPrice = ""
         maxPrice = ""
     }

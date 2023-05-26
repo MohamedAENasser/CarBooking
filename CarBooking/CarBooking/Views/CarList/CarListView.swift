@@ -19,6 +19,14 @@ struct CarListView: View {
                 carListView(carList: carList)
             case .loading:
                 LoadingView()
+            case .empty(let type):
+                EmptyStateView(type: type, onResetColorFiltersAction: {
+                    viewModel.resetColorsFilters()
+                }, onResetPriceFiltersAction: {
+                    viewModel.resetPriceFilters()
+                }, onResetAllFiltersAction: {
+                    viewModel.resetAllFilters()
+                })
             }
         }
         .onAppear {

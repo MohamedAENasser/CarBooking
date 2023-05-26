@@ -30,13 +30,20 @@ class CarListViewModel: ObservableObject {
         switch result {
         case .success(let carList):
             self.carList = carList
-            state = .success(carList)
+            if carList.isEmpty {
+                state = .empty(.response)
+            } else {
+                state = .success(carList)
+            }
         case .failure(let error):
             print(error) // TODO: Error Handling
         }
     }
+}
 
-    // MARK: - Filtration logic
+// MARK: - Filtration logic
+extension CarListViewModel {
+
     private func subscribeForFilterChanges() {
         $filterCriteria.subscribe(Subscribers.Sink(
             receiveCompletion: { _ in
@@ -46,29 +53,63 @@ class CarListViewModel: ObservableObject {
                     state = .refresh(carList)
                     return
                 }
+
                 var filteredCarList = carList
+                var availableFilterOptions: Set<FilterOptions> = []
                 filteredCarList = filteredCarList.filter { car in
-                    self.filterColor(car: car, colorList: criteria.colors) &&
-                    self.filterMinPrice(car: car, price: criteria.minPrice) &&
-                    self.filterMaxPrice(car: car, price: criteria.maxPrice)
+                    let isValidColor = self.filterColor(car: car, colorList: criteria.colors, availableFilterOptions: &availableFilterOptions)
+                    let isValidPrice = self.filterPrice(car: car, minPrice: criteria.minPrice, maxPrice: criteria.maxPrice, availableFilterOptions: &availableFilterOptions)
+
+                    return isValidColor && isValidPrice
                 }
-                state = .refresh(filteredCarList)
+                if filteredCarList.isEmpty {
+                    state = .empty(.filter(availableFilterOptions))
+                } else {
+                    state = .refresh(filteredCarList)
+                }
             })
         )
     }
 
-    private func filterColor(car: Car, colorList: Set<String>) -> Bool {
+    private func filterColor(car: Car, colorList: Set<String>, availableFilterOptions: inout Set<FilterOptions>) -> Bool {
         if colorList.isEmpty { return true }
-        return colorList.map {$0.lowercased()}.contains(car.color.lowercased())
+        let isValid = colorList.map {$0.lowercased()}.contains(car.color.lowercased())
+        if isValid {
+            availableFilterOptions.insert(.color)
+        }
+        return isValid
     }
 
-    private func filterMinPrice(car: Car, price: String) -> Bool {
-        if price.isEmpty { return true }
-        return car.unitPrice >= (Double(price) ?? 0)
+    private func filterPrice(car: Car, minPrice: String, maxPrice: String, availableFilterOptions: inout Set<FilterOptions>) -> Bool {
+        var isValid: Bool
+        if minPrice.isEmpty && maxPrice.isEmpty {
+            return true
+        } else if maxPrice.isEmpty {
+            isValid = car.unitPrice >= (Double(minPrice) ?? 0)
+        } else if minPrice.isEmpty {
+            isValid = car.unitPrice <= (Double(maxPrice) ?? 0)
+        } else {
+            isValid = (Double(minPrice) ?? 0)...(Double(maxPrice) ?? 0) ~= car.unitPrice
+        }
+        if isValid {
+            availableFilterOptions.insert(.price)
+        }
+        return isValid
     }
 
-    private func filterMaxPrice(car: Car, price: String) -> Bool {
-        if price.isEmpty { return true }
-        return car.unitPrice <= (Double(price) ?? 0)
+
+    // MARK: - Helper Methods
+
+    func resetAllFilters() {
+        filterCriteria.resetAll()
+    }
+
+    func resetColorsFilters() {
+        filterCriteria.resetColors()
+    }
+
+
+    func resetPriceFilters() {
+        filterCriteria.resetPrice()
     }
 }

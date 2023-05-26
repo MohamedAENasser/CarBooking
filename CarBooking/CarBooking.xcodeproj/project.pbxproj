@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		92491D348BE511817388C0FE /* Pods_CarBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */; };
+		CF86AF7B2A20EE17007CBF18 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */; };
+		CF86AF7D2A20F71D007CBF18 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */; };
 		CFC9A2322A1D59DA00948A80 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */; };
 		CFC9A2362A1D59DC00948A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2352A1D59DC00948A80 /* Assets.xcassets */; };
 		CFC9A2392A1D59DC00948A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2382A1D59DC00948A80 /* Preview Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.debug.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
 		3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		CFC9A22E2A1D59DA00948A80 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		CFC9A2352A1D59DC00948A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 			children = (
 				CFC9A2742A1ED23700948A80 /* FilterView.swift */,
 				CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */,
+				CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */,
 				CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */,
 			);
 			path = FilterView;
@@ -215,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */,
+				CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 				CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */,
 				CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */,
 				CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */,
+				CF86AF7B2A20EE17007CBF18 /* EmptyStateView.swift in Sources */,
+				CF86AF7D2A20F71D007CBF18 /* FilterOptions.swift in Sources */,
 				CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */,
 				CFC9A2812A20D05B00948A80 /* CarDetailsView.swift in Sources */,
 				CFC9A2592A1D5AD400948A80 /* CarsResponse.swift in Sources */,

@@ -89,8 +89,8 @@ struct FilterView: View {
         }
         .foregroundColor(.blue)
         .onTapGesture {
-            filterCriteria.reset()
-            tempFilterCriteria.reset()
+            filterCriteria.resetAll()
+            tempFilterCriteria.resetAll()
         }
     }
 
