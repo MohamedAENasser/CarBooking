@@ -1,5 +1,5 @@
 //
-//  CheckListItem.swift
+//  ColorPaletteView.swift
 //  CarBooking
 //
 //  Created by Mohamed Abd ElNasser on 25/05/2023.
@@ -13,7 +13,7 @@ struct ColorItem {
 }
 
 struct ColorPaletteView: View {
-    @State var colorItems: [ColorItem] = []
+    @Binding var colorItems: [ColorItem]
     var onTapAction: ((_ index: Int, _ isChecked: Bool) -> Void)?
 
     var body: some View {
@@ -60,6 +60,6 @@ struct ColorPaletteView: View {
 
 struct ColorPaletteView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPaletteView(colorItems: [ColorItem(name: "Red", isChecked: true), ColorItem(name: "Green", isChecked: false)])
+        ColorPaletteView(colorItems: .constant([ColorItem(name: "Red", isChecked: true), ColorItem(name: "Green", isChecked: false)]))
     }
 }

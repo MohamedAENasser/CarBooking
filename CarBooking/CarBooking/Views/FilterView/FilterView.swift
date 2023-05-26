@@ -105,7 +105,7 @@ struct FilterView: View {
 
     var colorSectionView: some View {
         Section(header: Text("Color").font(.title3).fontWeight(.bold)) {
-            ColorPaletteView(colorItems: Color.availableColorsNames().map { ColorItem(name: $0, isChecked: tempFilterCriteria.colors.contains($0)) }) { index, isChecked in
+            ColorPaletteView(colorItems: $tempFilterCriteria.availableColorItems) { index, isChecked in
                 if isChecked {
                     tempFilterCriteria.colors.insert(Color.availableColorsNames()[index])
                 } else {

@@ -25,7 +25,7 @@
 		CFC9A26D2A1EBF6800948A80 /* Color+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */; };
 		CFC9A2712A1EC5B700948A80 /* Double+SimplifiedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */; };
 		CFC9A2752A1ED23700948A80 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2742A1ED23700948A80 /* FilterView.swift */; };
-		CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */; };
+		CFC9A2772A1EEA3F00948A80 /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2762A1EEA3F00948A80 /* ColorPaletteView.swift */; };
 		CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */; };
 		CFC9A27B2A1FD7B800948A80 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A27A2A1FD7B800948A80 /* AppState.swift */; };
 		CFC9A27E2A1FD91E00948A80 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */; };
@@ -53,7 +53,7 @@
 		CFC9A26C2A1EBF6800948A80 /* Color+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Name.swift"; sourceTree = "<group>"; };
 		CFC9A2702A1EC5B700948A80 /* Double+SimplifiedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+SimplifiedPrice.swift"; sourceTree = "<group>"; };
 		CFC9A2742A1ED23700948A80 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		CFC9A2762A1EEA3F00948A80 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 		CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCriteria.swift; sourceTree = "<group>"; };
 		CFC9A27A2A1FD7B800948A80 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 				CFC9A2742A1ED23700948A80 /* FilterView.swift */,
 				CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */,
 				CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */,
-				CFC9A2762A1EEA3F00948A80 /* CheckListItem.swift */,
+				CFC9A2762A1EEA3F00948A80 /* ColorPaletteView.swift */,
 			);
 			path = FilterView;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 				CFC9A25F2A1E41AE00948A80 /* CarListViewModel.swift in Sources */,
 				CFC9A2572A1D5AD400948A80 /* CarBookingTarget.swift in Sources */,
 				CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */,
-				CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */,
+				CFC9A2772A1EEA3F00948A80 /* ColorPaletteView.swift in Sources */,
 				CF86AF7B2A20EE17007CBF18 /* EmptyStateView.swift in Sources */,
 				CF86AF7D2A20F71D007CBF18 /* FilterOptions.swift in Sources */,
 				CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */,
