@@ -56,15 +56,11 @@ struct FilterView: View {
                 VStack {
                     List {
 
-                        if !tempFilterCriteria.noFiltersApplied {
-                            resetView
-                        }
-
                         priceSectionView
 
                         colorSectionView
 
-                        applySectionView
+                        userActionsView
 
                     }
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
@@ -79,18 +75,6 @@ struct FilterView: View {
         }
         .onAppear {
             tempFilterCriteria = filterCriteria
-        }
-    }
-
-    var resetView: some View {
-        HStack {
-            Image("slider.horizontal.2.gobackward")
-            Text("Reset all filters")
-        }
-        .foregroundColor(.blue)
-        .onTapGesture {
-            filterCriteria.resetAll()
-            tempFilterCriteria.resetAll()
         }
     }
 
@@ -115,23 +99,45 @@ struct FilterView: View {
         }
     }
 
-    var applySectionView: some View {
+    var resetActionView: some View {
+        Text("Reset")
+            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+            .foregroundColor(.black)
+            .background {
+                Capsule()
+                    .stroke(.black)
+            }
+            .onTapGesture {
+                filterCriteria.resetAll()
+                tempFilterCriteria.resetAll()
+            }
+    }
+
+    var applyActionView: some View {
+        Text("Apply")
+            .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+            .foregroundColor(Color.white)
+            .background(Color.blue)
+            .clipShape(Capsule())
+            .onTapGesture {
+                filterCriteria = tempFilterCriteria
+                inputIsFocused = false
+                isFilterViewVisible.toggle()
+            }
+    }
+
+    var userActionsView: some View {
         HStack {
 
-            Spacer()
-
-            Text("Apply")
-                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
-                .foregroundColor(Color.white)
-                .background(Color.blue)
-                .clipShape(Capsule())
-                .onTapGesture {
-                    filterCriteria = tempFilterCriteria
-                    inputIsFocused = false
-                    isFilterViewVisible.toggle()
-                }
+            if !tempFilterCriteria.noFiltersApplied {
+                resetActionView
+            }
 
             Spacer()
+
+            applyActionView
+
         }
+        .padding([.leading, .trailing], 10)
     }
 }
