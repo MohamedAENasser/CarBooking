@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorItem {
+struct ColorItem: Equatable {
     var name: String
     var isChecked: Bool
 }

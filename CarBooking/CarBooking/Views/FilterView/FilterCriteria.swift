@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FilterCriteria {
+struct FilterCriteria: Equatable {
     var colors: Set<String> = []
     var minPrice: String = ""
     var maxPrice: String = ""
@@ -40,5 +40,12 @@ struct FilterCriteria {
     mutating func resetPrice() {
         minPrice = ""
         maxPrice = ""
+    }
+
+    static func == (lhs: FilterCriteria, rhs: FilterCriteria) -> Bool {
+        lhs.colors == rhs.colors &&
+        lhs.minPrice == rhs.minPrice &&
+        lhs.maxPrice == rhs.maxPrice &&
+        lhs.availableColorItems == rhs.availableColorItems
     }
 }

@@ -19,6 +19,7 @@ struct FilterView: View {
     @FocusState private var inputIsFocused: Bool
 
     @State private var tempFilterCriteria: FilterCriteria = FilterCriteria()
+    @State private var showingAlert = false
 
     let screenWidth = UIScreen.main.bounds.size.width
     var filterViewWidth = UIScreen.main.bounds.size.width * 0.6
@@ -33,6 +34,17 @@ struct FilterView: View {
         .onTapGesture {
             inputIsFocused = false
         }
+        .alert(isPresented:$showingAlert) {
+            Alert(
+                title: Text("You have unsaved filters, do you want to apply them?"),
+                primaryButton: .default(Text("Apply")) {
+                    applyFiltersAction()
+                },
+                secondaryButton: .destructive(Text("Discard")) {
+                    dismissAction()
+                }
+            )
+        }
     }
 
     var backgroundView: some View {
@@ -43,8 +55,11 @@ struct FilterView: View {
         .opacity(isFilterViewVisible ? 1 : 0)
         .animation(.easeInOut.delay(0.2), value: isFilterViewVisible)
         .onTapGesture {
-            inputIsFocused = false
-            isFilterViewVisible.toggle()
+            if tempFilterCriteria != filterCriteria {
+                showingAlert = true
+            } else {
+                dismissAction()
+            }
         }
     }
 
@@ -108,8 +123,7 @@ struct FilterView: View {
                     .stroke(.black)
             }
             .onTapGesture {
-                filterCriteria.resetAll()
-                tempFilterCriteria.resetAll()
+                resetFiltersAction()
             }
     }
 
@@ -120,9 +134,7 @@ struct FilterView: View {
             .background(Color.blue)
             .clipShape(Capsule())
             .onTapGesture {
-                filterCriteria = tempFilterCriteria
-                inputIsFocused = false
-                isFilterViewVisible.toggle()
+                applyFiltersAction()
             }
     }
 
@@ -135,9 +147,27 @@ struct FilterView: View {
 
             Spacer()
 
-            applyActionView
+            if tempFilterCriteria != filterCriteria {
+                applyActionView
+            }
 
         }
         .padding([.leading, .trailing], 10)
+    }
+
+    private func applyFiltersAction() {
+        filterCriteria = tempFilterCriteria
+        inputIsFocused = false
+        isFilterViewVisible.toggle()
+    }
+
+    private func resetFiltersAction() {
+        filterCriteria.resetAll()
+        tempFilterCriteria.resetAll()
+    }
+
+    private func dismissAction() {
+        inputIsFocused = false
+        isFilterViewVisible.toggle()
     }
 }
