@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CarListView: View {
-    @StateObject private var viewModel = CarListViewModel()
+    @EnvironmentObject private var viewModel: CarListViewModel
     @State private var isFilterViewOpened = false
 
     var body: some View {

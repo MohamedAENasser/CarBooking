@@ -47,8 +47,9 @@ extension CarBookingTarget: TargetType {
         [:/* Headers */]
     }
 
+    static var stubFileName = "SampleData_success"
     var sampleData: Data {
-        guard let path = Bundle.main.path(forResource: "SampleData_success", ofType: "json") else { return Data() }
+        guard let path = Bundle.main.path(forResource: CarBookingTarget.stubFileName, ofType: "json") else { return Data() }
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             return data

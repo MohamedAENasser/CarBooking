@@ -9,7 +9,13 @@ import Foundation
 
 // MARK: - CarsResponse
 struct CarsResponse: Codable {
-    var cars: [Car]
+    var status: Status
+    var cars: [Car]?
+}
+
+struct Status: Codable {
+    let code: Int
+    let message: String
 }
 
 // MARK: - Car
