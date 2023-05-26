@@ -27,6 +27,7 @@
 		CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */; };
 		CFC9A27B2A1FD7B800948A80 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A27A2A1FD7B800948A80 /* AppState.swift */; };
 		CFC9A27E2A1FD91E00948A80 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */; };
+		CFC9A2812A20D05B00948A80 /* CarDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2802A20D05B00948A80 /* CarDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CFC9A2782A1F7ACA00948A80 /* FilterCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCriteria.swift; sourceTree = "<group>"; };
 		CFC9A27A2A1FD7B800948A80 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CFC9A2802A20D05B00948A80 /* CarDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsView.swift; sourceTree = "<group>"; };
 		F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.release.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 			children = (
 				CFC9A25D2A1E419900948A80 /* CarList */,
 				CFC9A2662A1EB73C00948A80 /* CarCell */,
+				CFC9A27F2A20D04800948A80 /* CarDetailsView */,
 				CFC9A2732A1ED22300948A80 /* FilterView */,
 				CFC9A27C2A1FD90500948A80 /* States */,
 			);
@@ -214,6 +217,14 @@
 				CFC9A27D2A1FD91E00948A80 /* LoadingView.swift */,
 			);
 			path = States;
+			sourceTree = "<group>";
+		};
+		CFC9A27F2A20D04800948A80 /* CarDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9A2802A20D05B00948A80 /* CarDetailsView.swift */,
+			);
+			path = CarDetailsView;
 			sourceTree = "<group>";
 		};
 		F29E975321D9B5B4B1B551B7 /* Frameworks */ = {
@@ -346,6 +357,7 @@
 				CFC9A2792A1F7ACA00948A80 /* FilterCriteria.swift in Sources */,
 				CFC9A2772A1EEA3F00948A80 /* CheckListItem.swift in Sources */,
 				CFC9A25B2A1E412100948A80 /* CarListView.swift in Sources */,
+				CFC9A2812A20D05B00948A80 /* CarDetailsView.swift in Sources */,
 				CFC9A2592A1D5AD400948A80 /* CarsResponse.swift in Sources */,
 				CFC9A2622A1E47C200948A80 /* CarsService.swift in Sources */,
 				CFC9A27E2A1FD91E00948A80 /* LoadingView.swift in Sources */,

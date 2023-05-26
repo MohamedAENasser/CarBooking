@@ -32,7 +32,11 @@ struct CarListView: View {
         ZStack {
             NavigationView {
                 List(carList, id: \.id) { car in
-                    CarCell(car: car)
+                    NavigationLink {
+                        CarDetailsView(car: car)
+                    } label: {
+                        CarCell(car: car)
+                    }
                 }
                 .navigationTitle("Available Cars")
                 .navigationBarTitleDisplayMode(.inline)

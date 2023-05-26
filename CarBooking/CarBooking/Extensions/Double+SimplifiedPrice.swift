@@ -16,4 +16,12 @@ extension Double {
         default: return String(format: "%.1f", self/1_000_000) + "M" // TODO: Handle localization for RTL languages
         }
     }
+
+    func removeTrailingZeros() -> String {
+        let formatter = NumberFormatter()
+        let number = NSNumber(value: self)
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 16
+        return String(formatter.string(from: number) ?? "")
+    }
 }
