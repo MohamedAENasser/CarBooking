@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2048EC6D553C6C0E746EA1C6 /* Pods_CarBookingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC4242B5D5D7CA0E0AEC33E /* Pods_CarBookingTests.framework */; };
 		92491D348BE511817388C0FE /* Pods_CarBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */; };
 		CF63388D2A216524006CA160 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF63388C2A216524006CA160 /* ErrorStateView.swift */; };
 		CF86AF7B2A20EE17007CBF18 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */; };
 		CF86AF7D2A20F71D007CBF18 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */; };
 		CF96E39C2A21750B00FFAAA6 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96E39B2A21750B00FFAAA6 /* MainMenuView.swift */; };
 		CF96E39E2A217B9A00FFAAA6 /* SampleData_error.json in Resources */ = {isa = PBXBuildFile; fileRef = CF96E39D2A217B9A00FFAAA6 /* SampleData_error.json */; };
-		CF96E3A62A2180F900FFAAA6 /* CarBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96E3A52A2180F900FFAAA6 /* CarBookingTests.swift */; };
+		CF96E3A62A2180F900FFAAA6 /* CarListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96E3A52A2180F900FFAAA6 /* CarListViewModelTests.swift */; };
+		CF96E3B02A21821B00FFAAA6 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = CF96E3AD2A21821A00FFAAA6 /* success.json */; };
+		CF96E3B12A21821B00FFAAA6 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = CF96E3AE2A21821A00FFAAA6 /* error.json */; };
+		CF96E3B22A21821B00FFAAA6 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = CF96E3AF2A21821B00FFAAA6 /* empty.json */; };
+		CF96E3B42A21856200FFAAA6 /* Bundle+UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96E3B32A21856200FFAAA6 /* Bundle+UnitTests.swift */; };
 		CFC9A2322A1D59DA00948A80 /* CarBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */; };
 		CFC9A2362A1D59DC00948A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2352A1D59DC00948A80 /* Assets.xcassets */; };
 		CFC9A2392A1D59DC00948A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC9A2382A1D59DC00948A80 /* Preview Assets.xcassets */; };
@@ -47,15 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11F7E9210366211B039E7B8A /* Pods-CarBookingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingTests.release.xcconfig"; path = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.release.xcconfig"; sourceTree = "<group>"; };
 		26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBooking.debug.xcconfig"; path = "Target Support Files/Pods-CarBooking/Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
+		2FC4242B5D5D7CA0E0AEC33E /* Pods_CarBookingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBookingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E472BA91CC0A526569C61FB /* Pods-CarBookingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBookingTests.debug.xcconfig"; path = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF63388C2A216524006CA160 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 		CF86AF7A2A20EE17007CBF18 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		CF86AF7C2A20F71D007CBF18 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		CF96E39B2A21750B00FFAAA6 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		CF96E39D2A217B9A00FFAAA6 /* SampleData_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData_error.json; sourceTree = "<group>"; };
 		CF96E3A32A2180F900FFAAA6 /* CarBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF96E3A52A2180F900FFAAA6 /* CarBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingTests.swift; sourceTree = "<group>"; };
+		CF96E3A52A2180F900FFAAA6 /* CarListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModelTests.swift; sourceTree = "<group>"; };
+		CF96E3AD2A21821A00FFAAA6 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		CF96E3AE2A21821A00FFAAA6 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		CF96E3AF2A21821B00FFAAA6 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		CF96E3B32A21856200FFAAA6 /* Bundle+UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+UnitTests.swift"; sourceTree = "<group>"; };
 		CFC9A22E2A1D59DA00948A80 /* CarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9A2312A1D59DA00948A80 /* CarBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBookingApp.swift; sourceTree = "<group>"; };
 		CFC9A2352A1D59DC00948A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2048EC6D553C6C0E746EA1C6 /* Pods_CarBookingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +117,8 @@
 			children = (
 				26126C6E59A44FA71CDE79F3 /* Pods-CarBooking.debug.xcconfig */,
 				F69F27F906539A2965B6DC48 /* Pods-CarBooking.release.xcconfig */,
+				6E472BA91CC0A526569C61FB /* Pods-CarBookingTests.debug.xcconfig */,
+				11F7E9210366211B039E7B8A /* Pods-CarBookingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -111,9 +126,29 @@
 		CF96E3A42A2180F900FFAAA6 /* CarBookingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CF96E3A52A2180F900FFAAA6 /* CarBookingTests.swift */,
+				CF96E3AC2A2181FD00FFAAA6 /* Stubs */,
+				CF96E3A52A2180F900FFAAA6 /* CarListViewModelTests.swift */,
+				CF96E3B52A21856500FFAAA6 /* Extensions */,
 			);
 			path = CarBookingTests;
+			sourceTree = "<group>";
+		};
+		CF96E3AC2A2181FD00FFAAA6 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				CF96E3AE2A21821A00FFAAA6 /* error.json */,
+				CF96E3AF2A21821B00FFAAA6 /* empty.json */,
+				CF96E3AD2A21821A00FFAAA6 /* success.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		CF96E3B52A21856500FFAAA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF96E3B32A21856200FFAAA6 /* Bundle+UnitTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CFC9A2252A1D59DA00948A80 = {
@@ -276,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				3721A03E73C02C6B5164B736 /* Pods_CarBooking.framework */,
+				2FC4242B5D5D7CA0E0AEC33E /* Pods_CarBookingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF96E3AB2A2180F900FFAAA6 /* Build configuration list for PBXNativeTarget "CarBookingTests" */;
 			buildPhases = (
+				41AB959370A41D34648B1CF5 /* [CP] Check Pods Manifest.lock */,
 				CF96E39F2A2180F900FFAAA6 /* Sources */,
 				CF96E3A02A2180F900FFAAA6 /* Frameworks */,
 				CF96E3A12A2180F900FFAAA6 /* Resources */,
+				71C29CE1000BAAA36CD80C9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +401,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF96E3B12A21821B00FFAAA6 /* error.json in Resources */,
+				CF96E3B02A21821B00FFAAA6 /* success.json in Resources */,
+				CF96E3B22A21821B00FFAAA6 /* empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +439,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarBooking/Pods-CarBooking-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		41AB959370A41D34648B1CF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarBookingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71C29CE1000BAAA36CD80C9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		97DB8CC83682C0B44EFA087E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,7 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF96E3A62A2180F900FFAAA6 /* CarBookingTests.swift in Sources */,
+				CF96E3A62A2180F900FFAAA6 /* CarListViewModelTests.swift in Sources */,
+				CF96E3B42A21856200FFAAA6 /* Bundle+UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +552,7 @@
 /* Begin XCBuildConfiguration section */
 		CF96E3A92A2180F900FFAAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E472BA91CC0A526569C61FB /* Pods-CarBookingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +570,7 @@
 		};
 		CF96E3AA2A2180F900FFAAA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F7E9210366211B039E7B8A /* Pods-CarBookingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

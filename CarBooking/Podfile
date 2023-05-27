@@ -10,4 +10,9 @@ target 'CarBooking' do
   pod 'Moya'
   pod 'Moya/Combine'
 
+  target 'CarBookingTests' do
+      inherit! :search_paths
+      pod 'Moya'
+      pod 'Moya/Combine'
+  end
 end

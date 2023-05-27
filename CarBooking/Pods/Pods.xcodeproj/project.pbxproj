@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4BBE7A0274D4FCFC79024A61BB6AE5 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0082722154A409695022F342F092B856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4384B97D260568603E21BCD9F1C45372 /* Foundation.framework */; };
 		045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E55E20DF9221CF01962CCAE400B5E3 /* RedirectHandler.swift */; };
 		04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31F0F216EB6B373DF70430A2DF18DD3 /* Result+Alamofire.swift */; };
 		0ABC9A369CAA05893B7C416DCBC55F46 /* MoyaPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426E051C90AC3568F406D8134C027A2 /* MoyaPublisher.swift */; };
 		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4384B97D260568603E21BCD9F1C45372 /* Foundation.framework */; };
+		0FF8A48889DBABBC78DDEDCE43558E79 /* Pods-CarBookingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A12FD48E2CD27BF31F4D27A32C4DC456 /* Pods-CarBookingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10DCCB9B1C6B9C5BE660874B60824483 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89551961D6B6ED1EE0FE9D5C3857F695 /* Response.swift */; };
 		127FCA2C47EBD4F6ED3994E7BEF04B51 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4A7E69204EA444297F22F9617E2F7 /* Plugin.swift */; };
 		1559645748AC8493E831C53EB72219C0 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74DE837288F7C0CE84C279C60CAC22 /* NetworkLoggerPlugin.swift */; };
@@ -57,7 +59,7 @@
 		A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9CEEEA87E970C7488A0440F23E530A /* NetworkReachabilityManager.swift */; };
 		A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8A699A5F58FD1E56741E996B8B1EA /* Protected.swift */; };
 		AAB468E812CF8A30D1AA1244E77D57ED /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D82461A2011EC0E6EF4D4618D1CFD6 /* Task.swift */; };
-		B1B7130AD2895C8F74D431E572E97F35 /* Pods-CarBooking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F235F726A68B407DB7354BBDA4E92FC /* Pods-CarBooking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1B7130AD2895C8F74D431E572E97F35 /* Pods-CarBooking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80551CDA9648DFACF237D203F22FD332 /* Pods-CarBooking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4283EB861E20318EC29BFDE4FED4F3 /* Request.swift */; };
 		B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C988ABDA0605E32BE11A53CD0C634D7 /* ServerTrustEvaluation.swift */; };
 		B82B3F410970FFB6D099C92F9F4072DB /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10234043FC31F5C3C1766B1F4CC136B /* Atomic.swift */; };
@@ -67,12 +69,13 @@
 		C4C9ABA0FB95940C9162EE9ABB02DE5B /* MoyaProvider+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CAAB59368560B3A17C21E9F527261 /* MoyaProvider+Combine.swift */; };
 		CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770541CA251E61DA6078C4251D791579 /* EventMonitor.swift */; };
 		D0EA90FBF83350C49E6EF6C8A98D6F00 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C47A4FB486B2A7D098936E059D1143 /* AFError.swift */; };
-		D44FB9BCE7E1A369C98CA664C5CC64F3 /* Pods-CarBooking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5A6B5A1F7F3B02CEB630C9185BC60 /* Pods-CarBooking-dummy.m */; };
+		D44FB9BCE7E1A369C98CA664C5CC64F3 /* Pods-CarBooking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E53C1FAC931194950AB6CDE148B65C /* Pods-CarBooking-dummy.m */; };
 		D67D09E704356501707423331F0AAE78 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6C8E841676051AE6BB86F50518FD1 /* AnyEncodable.swift */; };
 		D6B4751CED01D53E4A1B6A571AAA2F83 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50772D4B971E16886356CBA393D27806 /* HTTPMethod.swift */; };
 		DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9510B02E835577EE25E9C024A36677 /* RequestTaskMap.swift */; };
 		DADA25BE4296C41BEE8E07B62438FBCC /* MoyaProvider+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C1EC590890C4208C6564032E91D0 /* MoyaProvider+Defaults.swift */; };
 		DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A58C204DE69EC30F9FE027D8AC4E5E /* RequestInterceptor.swift */; };
+		E17BB230CA59306D411A3739CD1BD5C5 /* Pods-CarBookingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C2DD5CF46A1907783BE5B66CA8C199 /* Pods-CarBookingTests-dummy.m */; };
 		E3C769CCDC15DF3B7FFA79142196B67A /* MultiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F520642B42A6A6290AFD892292189F3 /* MultiTarget.swift */; };
 		E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAD91BF13EF481B241F25389E7374C /* OperationQueue+Alamofire.swift */; };
 		E77EA038FD8A872E1652BF3AFB73BF60 /* URLRequest+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB9F5706EBB9D1E73E0C3B613A444A /* URLRequest+Encoding.swift */; };
@@ -90,6 +93,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 17F9141D333DA1A7BE5937F227221070;
 			remoteInfo = Moya;
+		};
+		39853241CF3BB5F14F8EBA22C7F67972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		69D504347012352E3E5B7F3D8387B2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F9141D333DA1A7BE5937F227221070;
+			remoteInfo = Moya;
+		};
+		7B028046CB51896DBDD651B54A47C611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4728B8EA87C1C11C5497378AA2EFE73F;
+			remoteInfo = "Pods-CarBooking";
 		};
 		930FD1AE7499106D8DA5FDFAFFE0A580 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -115,10 +139,10 @@
 		129CAAB59368560B3A17C21E9F527261 /* MoyaProvider+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Combine.swift"; path = "Sources/CombineMoya/MoyaProvider+Combine.swift"; sourceTree = "<group>"; };
 		139B60FAD8C682D2016F2ABCAB41F5B0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		16EAD91BF13EF481B241F25389E7374C /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		18E5A6B5A1F7F3B02CEB630C9185BC60 /* Pods-CarBooking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarBooking-dummy.m"; sourceTree = "<group>"; };
 		1A9D43F5D76F6144A5464B4026CC4332 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		1BB6222487BB65C4237BE03B3CF7F8A2 /* Pods-CarBooking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBooking-Info.plist"; sourceTree = "<group>"; };
+		1C171C9F7FD1361900B47581F84078FB /* Pods-CarBookingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBookingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C734215C02BF6341A1696A75EE7BDA7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		206DDEE6CC4E84DD2B42061A36FEFFCE /* Pods-CarBooking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarBooking.modulemap"; sourceTree = "<group>"; };
 		20BB9F5706EBB9D1E73E0C3B613A444A /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Encoding.swift"; path = "Sources/Moya/URLRequest+Encoding.swift"; sourceTree = "<group>"; };
 		243531DFAB36845F9A71B2FC09DB12AC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		2ECF9D84DC46F3E6F653E86B07F6A90B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
@@ -137,59 +161,70 @@
 		4F9510B02E835577EE25E9C024A36677 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		50772D4B971E16886356CBA393D27806 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		50C2D8709EF3C34CE5208D4F2E6AD004 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Combine.framework; sourceTree = DEVELOPER_DIR; };
-		52D126EDB394CB3E8CEEE26723E2FE19 /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
+		51D588A92281FE08D031D7BECF1A2E70 /* Pods-CarBooking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarBooking-acknowledgements.markdown"; sourceTree = "<group>"; };
 		554D47F675D017EBE9B13CD1B05DEC29 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		585EF850F32C24CA0CE3BE4E5A7EC92F /* Moya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moya-dummy.m"; sourceTree = "<group>"; };
 		5C988ABDA0605E32BE11A53CD0C634D7 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		5C9F27FA230DEC8F816978CC40FCD14E /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7B62B5C9EC184BB044EA9318D49BAB /* Pods-CarBookingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBookingTests-Info.plist"; sourceTree = "<group>"; };
 		603851443834D5FE14652CAC4EE81BB3 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/Moya/MultipartFormData.swift; sourceTree = "<group>"; };
 		604C4BBAAF4EFCF5EC3C727EAC9AC032 /* Moya-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moya-Info.plist"; sourceTree = "<group>"; };
+		606ACDAD64F61D3A49CFD7CEC8D4BEAB /* Pods-CarBookingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarBookingTests-frameworks.sh"; sourceTree = "<group>"; };
+		609E2D5ABD3259B6582B700949754322 /* Pods-CarBookingTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CarBookingTests"; path = Pods_CarBookingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E53C1FAC931194950AB6CDE148B65C /* Pods-CarBooking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarBooking-dummy.m"; sourceTree = "<group>"; };
 		656709AF3A69E6EE8D3B1284596A1C0B /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		6BBACE50DA2B15543EF2F95ABE3FD145 /* MoyaProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaProvider.swift; path = Sources/Moya/MoyaProvider.swift; sourceTree = "<group>"; };
 		6FAF9D91FFC388B5BC57E9514DF62F9D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		70AF200FDF77EB09E944DBBF9942E50C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		70C2DD5CF46A1907783BE5B66CA8C199 /* Pods-CarBookingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarBookingTests-dummy.m"; sourceTree = "<group>"; };
 		70DE743070B71C764B6B8F6A2B09E167 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		716E002E65E34F6EF0A35D6071BE5FB4 /* Pods-CarBooking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarBooking-frameworks.sh"; sourceTree = "<group>"; };
 		742296D9930812274861D329AB64FA1E /* Moya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Moya.modulemap; sourceTree = "<group>"; };
 		7512ADE528E22111252D5D642B8062FB /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		770541CA251E61DA6078C4251D791579 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		7C95E43EA3A31C4439F4417857585855 /* Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.debug.xcconfig; sourceTree = "<group>"; };
-		7FCC29D8159F48F03AD92EB9246A4FCB /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
 		7FD8A699A5F58FD1E56741E996B8B1EA /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		80551CDA9648DFACF237D203F22FD332 /* Pods-CarBooking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarBooking-umbrella.h"; sourceTree = "<group>"; };
 		89551961D6B6ED1EE0FE9D5C3857F695 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Moya/Response.swift; sourceTree = "<group>"; };
 		8CA48C122D78916CA329C92B6633526E /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		8F235F726A68B407DB7354BBDA4E92FC /* Pods-CarBooking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarBooking-umbrella.h"; sourceTree = "<group>"; };
+		8E25211EA81297E30801150851676904 /* Pods-CarBooking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBooking-Info.plist"; sourceTree = "<group>"; };
 		8F520642B42A6A6290AFD892292189F3 /* MultiTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTarget.swift; path = Sources/Moya/MultiTarget.swift; sourceTree = "<group>"; };
 		8F5873E462F76F9B7C9B49A7DDB801DB /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		8FBEECAB22D7312ECB666F7780B722D0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		949025C1D91FDE4F58615202B643FC14 /* Pods-CarBooking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBooking-acknowledgements.plist"; sourceTree = "<group>"; };
+		94B85194468126A086DE631C92C09B44 /* Pods-CarBooking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarBooking-frameworks.sh"; sourceTree = "<group>"; };
 		974D8B7152260AAA3D6D168109BD9F3D /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityPlugin.swift; path = Sources/Moya/Plugins/NetworkActivityPlugin.swift; sourceTree = "<group>"; };
 		99E32CC78757AA4D772E1F13B9614B34 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		9A793D52D4DC55A51FDFE0BA093BEF32 /* Pods-CarBookingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBookingTests.release.xcconfig"; sourceTree = "<group>"; };
 		9ABFFE892C1876260A8358930B7F10B3 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		9D75310B1A98779DFF9D227879A51082 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7A3305AD39824EABD15A45C85E9C57 /* AnyPublisher+Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AnyPublisher+Response.swift"; path = "Sources/CombineMoya/AnyPublisher+Response.swift"; sourceTree = "<group>"; };
+		A12FD48E2CD27BF31F4D27A32C4DC456 /* Pods-CarBookingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarBookingTests-umbrella.h"; sourceTree = "<group>"; };
 		A15958A41312BD4462B82124D0662B2B /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		A1FADD2464A769DA85FEEEE16F578986 /* Pods-CarBookingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarBookingTests.modulemap"; sourceTree = "<group>"; };
+		A37D7A57646A0BDEBFC55C244315904F /* Pods-CarBookingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarBookingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A7A58C204DE69EC30F9FE027D8AC4E5E /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		A898874A9D09AAC18EFA1FFC6EE8009C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		AD9CEEEA87E970C7488A0440F23E530A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		BD1738005E3775ACCE2247E17B4916DC /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		BEC350DC33C201278BB5F9049D658180 /* CredentialsPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsPlugin.swift; path = Sources/Moya/Plugins/CredentialsPlugin.swift; sourceTree = "<group>"; };
 		C10234043FC31F5C3C1766B1F4CC136B /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Moya/Atomic.swift; sourceTree = "<group>"; };
-		C5384A7F4196F0089BF2FB581763C7A4 /* Pods-CarBooking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarBooking.modulemap"; sourceTree = "<group>"; };
 		C6BCCF81506187D33B594952A3EC6AEA /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		C9FBF7B4A824BFFC0C5FAA64D2761682 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		CA0E2633286E709CA490A94093B610A1 /* Pods-CarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBooking.release.xcconfig"; sourceTree = "<group>"; };
 		D025AF7C3DED5CDD5BED13201B36C4CF /* URL+Moya.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Moya.swift"; path = "Sources/Moya/URL+Moya.swift"; sourceTree = "<group>"; };
 		D0E6C1EC590890C4208C6564032E91D0 /* MoyaProvider+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Defaults.swift"; path = "Sources/Moya/MoyaProvider+Defaults.swift"; sourceTree = "<group>"; };
-		D227CF181A103FB0ED41D3097E3446E1 /* Pods-CarBooking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBooking-acknowledgements.plist"; sourceTree = "<group>"; };
 		D324AB152E3B34C2B1C3A6B3ECE0F8D1 /* Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Moya/Cancellable.swift; sourceTree = "<group>"; };
 		D3BB847818F40E5DA7BC42486610A68F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		D426E051C90AC3568F406D8134C027A2 /* MoyaPublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaPublisher.swift; path = Sources/CombineMoya/MoyaPublisher.swift; sourceTree = "<group>"; };
 		D802930215638FC500F112CA6FD4CF80 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		DCF62CFB9CADDDAA6072DC80EF42F162 /* Pods-CarBookingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarBookingTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DDDAEC2FC2D189306CF0D98A73B02446 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		E0EE7FD5C05E3B746F734E59A8F0B51C /* ValidationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationType.swift; path = Sources/Moya/ValidationType.swift; sourceTree = "<group>"; };
 		E1A4A7E69204EA444297F22F9617E2F7 /* Plugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = Sources/Moya/Plugin.swift; sourceTree = "<group>"; };
 		E7979AA780B565419D8A3F485C389D30 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Moya/Image.swift; sourceTree = "<group>"; };
+		EEE61250FE0276A324346886F9107702 /* Pods-CarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarBooking.debug.xcconfig"; sourceTree = "<group>"; };
 		F132D370B2BBA3720D250CEF87C3B45E /* Moya-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-prefix.pch"; sourceTree = "<group>"; };
 		F2F07D80B4746DD333707640855EA21B /* MoyaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaError.swift; path = Sources/Moya/MoyaError.swift; sourceTree = "<group>"; };
 		F31F0F216EB6B373DF70430A2DF18DD3 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
@@ -200,7 +235,6 @@
 		FB2081967EFD1A3F74AFAC0032AE7F5B /* Pods-CarBooking */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CarBooking"; path = Pods_CarBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB74DE837288F7C0CE84C279C60CAC22 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkLoggerPlugin.swift; path = Sources/Moya/Plugins/NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
 		FDE6C8E841676051AE6BB86F50518FD1 /* AnyEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyEncodable.swift; path = Sources/Moya/AnyEncodable.swift; sourceTree = "<group>"; };
-		FE55F42B22D505B0DEAA4586CFBF2354 /* Pods-CarBooking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarBooking-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +255,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CACCE5A4B74A692B93E1FD105FE2DB31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0082722154A409695022F342F092B856 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1AF5E8136E11F66E2A6154B201C865A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,16 +275,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02243D597E612D2412768A1707F5CE37 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
-				FB2081967EFD1A3F74AFAC0032AE7F5B /* Pods-CarBooking */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,23 +359,6 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		3CF2F61F6C0B7C9B39D9A887CE55DF69 /* Pods-CarBooking */ = {
-			isa = PBXGroup;
-			children = (
-				C5384A7F4196F0089BF2FB581763C7A4 /* Pods-CarBooking.modulemap */,
-				FE55F42B22D505B0DEAA4586CFBF2354 /* Pods-CarBooking-acknowledgements.markdown */,
-				D227CF181A103FB0ED41D3097E3446E1 /* Pods-CarBooking-acknowledgements.plist */,
-				18E5A6B5A1F7F3B02CEB630C9185BC60 /* Pods-CarBooking-dummy.m */,
-				716E002E65E34F6EF0A35D6071BE5FB4 /* Pods-CarBooking-frameworks.sh */,
-				1BB6222487BB65C4237BE03B3CF7F8A2 /* Pods-CarBooking-Info.plist */,
-				8F235F726A68B407DB7354BBDA4E92FC /* Pods-CarBooking-umbrella.h */,
-				7FCC29D8159F48F03AD92EB9246A4FCB /* Pods-CarBooking.debug.xcconfig */,
-				52D126EDB394CB3E8CEEE26723E2FE19 /* Pods-CarBooking.release.xcconfig */,
-			);
-			name = "Pods-CarBooking";
-			path = "Target Support Files/Pods-CarBooking";
-			sourceTree = "<group>";
-		};
 		41C38129F0D89D8EB7F6327B466B4420 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +382,43 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Moya";
+			sourceTree = "<group>";
+		};
+		6E6097EE0B06FF27A2EC441B05DDA03E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
+				FB2081967EFD1A3F74AFAC0032AE7F5B /* Pods-CarBooking */,
+				609E2D5ABD3259B6582B700949754322 /* Pods-CarBookingTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7781E1A509F7B8D90191C2768A349315 /* Pods-CarBookingTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1FADD2464A769DA85FEEEE16F578986 /* Pods-CarBookingTests.modulemap */,
+				A37D7A57646A0BDEBFC55C244315904F /* Pods-CarBookingTests-acknowledgements.markdown */,
+				DCF62CFB9CADDDAA6072DC80EF42F162 /* Pods-CarBookingTests-acknowledgements.plist */,
+				70C2DD5CF46A1907783BE5B66CA8C199 /* Pods-CarBookingTests-dummy.m */,
+				606ACDAD64F61D3A49CFD7CEC8D4BEAB /* Pods-CarBookingTests-frameworks.sh */,
+				5E7B62B5C9EC184BB044EA9318D49BAB /* Pods-CarBookingTests-Info.plist */,
+				A12FD48E2CD27BF31F4D27A32C4DC456 /* Pods-CarBookingTests-umbrella.h */,
+				1C171C9F7FD1361900B47581F84078FB /* Pods-CarBookingTests.debug.xcconfig */,
+				9A793D52D4DC55A51FDFE0BA093BEF32 /* Pods-CarBookingTests.release.xcconfig */,
+			);
+			name = "Pods-CarBookingTests";
+			path = "Target Support Files/Pods-CarBookingTests";
+			sourceTree = "<group>";
+		};
+		813F26B7744134CBC7308AD5ABC6817E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC819C6141394DAC8F508F6FA94C7E75 /* Pods-CarBooking */,
+				7781E1A509F7B8D90191C2768A349315 /* Pods-CarBookingTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		8422491DF9754C0F60EEE44A1FCCBA23 /* Combine */ = {
@@ -405,12 +457,21 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		BEE77C84E642434A6CAC6F61D864939B /* Targets Support Files */ = {
+		BC819C6141394DAC8F508F6FA94C7E75 /* Pods-CarBooking */ = {
 			isa = PBXGroup;
 			children = (
-				3CF2F61F6C0B7C9B39D9A887CE55DF69 /* Pods-CarBooking */,
+				206DDEE6CC4E84DD2B42061A36FEFFCE /* Pods-CarBooking.modulemap */,
+				51D588A92281FE08D031D7BECF1A2E70 /* Pods-CarBooking-acknowledgements.markdown */,
+				949025C1D91FDE4F58615202B643FC14 /* Pods-CarBooking-acknowledgements.plist */,
+				63E53C1FAC931194950AB6CDE148B65C /* Pods-CarBooking-dummy.m */,
+				94B85194468126A086DE631C92C09B44 /* Pods-CarBooking-frameworks.sh */,
+				8E25211EA81297E30801150851676904 /* Pods-CarBooking-Info.plist */,
+				80551CDA9648DFACF237D203F22FD332 /* Pods-CarBooking-umbrella.h */,
+				EEE61250FE0276A324346886F9107702 /* Pods-CarBooking.debug.xcconfig */,
+				CA0E2633286E709CA490A94093B610A1 /* Pods-CarBooking.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-CarBooking";
+			path = "Target Support Files/Pods-CarBooking";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -419,8 +480,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				DD6878BD76BB4863179AE86727E0FFE4 /* Pods */,
-				02243D597E612D2412768A1707F5CE37 /* Products */,
-				BEE77C84E642434A6CAC6F61D864939B /* Targets Support Files */,
+				6E6097EE0B06FF27A2EC441B05DDA03E /* Products */,
+				813F26B7744134CBC7308AD5ABC6817E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -436,6 +497,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1DFFEA7734B25AA3E05906DE54A2C9A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF8A48889DBABBC78DDEDCE43558E79 /* Pods-CarBookingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52E6F7B26483BE3BC9393C6C05D32424 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,6 +571,27 @@
 			productReference = FB2081967EFD1A3F74AFAC0032AE7F5B /* Pods-CarBooking */;
 			productType = "com.apple.product-type.framework";
 		};
+		817CF0685CF1F6D8A4C8A4FBC0905630 /* Pods-CarBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C325323497347E5E51F3586C593BC2D /* Build configuration list for PBXNativeTarget "Pods-CarBookingTests" */;
+			buildPhases = (
+				1DFFEA7734B25AA3E05906DE54A2C9A4 /* Headers */,
+				5B8FF3C92924856B258EEC149B93389B /* Sources */,
+				CACCE5A4B74A692B93E1FD105FE2DB31 /* Frameworks */,
+				4B1F5AC8A6489B801D34D4C700B06EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806C666057A7D7133064B5F89AED6155 /* PBXTargetDependency */,
+				9B8CECA271E9A93A3E303909050C6DCC /* PBXTargetDependency */,
+				E4924A48FAD6B7E4F1FEFACF93C84AF2 /* PBXTargetDependency */,
+			);
+			name = "Pods-CarBookingTests";
+			productName = Pods_CarBookingTests;
+			productReference = 609E2D5ABD3259B6582B700949754322 /* Pods-CarBookingTests */;
+			productType = "com.apple.product-type.framework";
+		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A212264186B8822192F9C369D7DE4BB /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -538,19 +628,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 02243D597E612D2412768A1707F5CE37 /* Products */;
+			productRefGroup = 6E6097EE0B06FF27A2EC441B05DDA03E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				17F9141D333DA1A7BE5937F227221070 /* Moya */,
 				4728B8EA87C1C11C5497378AA2EFE73F /* Pods-CarBooking */,
+				817CF0685CF1F6D8A4C8A4FBC0905630 /* Pods-CarBookingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1E331D69CA8D17EBE5B4D8B0E90759B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F5AC8A6489B801D34D4C700B06EB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,6 +672,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B8FF3C92924856B258EEC149B93389B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17BB230CA59306D411A3739CD1BD5C5 /* Pods-CarBookingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0082B27CA0FB5B55D475997B0A4E6EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,18 +782,36 @@
 			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
 			targetProxy = 2068964B6E52DAA3CB22AF4C4853CE81 /* PBXContainerItemProxy */;
 		};
+		806C666057A7D7133064B5F89AED6155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 39853241CF3BB5F14F8EBA22C7F67972 /* PBXContainerItemProxy */;
+		};
+		9B8CECA271E9A93A3E303909050C6DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
+			targetProxy = 69D504347012352E3E5B7F3D8387B2E8 /* PBXContainerItemProxy */;
+		};
 		D4A6243C299AA85B4CE97CB77C40CED8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = F1471CEE39C2C5455ADAB0F4FE1BA0C4 /* PBXContainerItemProxy */;
 		};
+		E4924A48FAD6B7E4F1FEFACF93C84AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CarBooking";
+			target = 4728B8EA87C1C11C5497378AA2EFE73F /* Pods-CarBooking */;
+			targetProxy = 7B028046CB51896DBDD651B54A47C611 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D0526CBB260D041325D6CCBB93044EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52D126EDB394CB3E8CEEE26723E2FE19 /* Pods-CarBooking.release.xcconfig */;
+			baseConfigurationReference = CA0E2633286E709CA490A94093B610A1 /* Pods-CarBooking.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -725,7 +849,7 @@
 		};
 		318EB4C2B3A6144F2C6E25608E5131CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FCC29D8159F48F03AD92EB9246A4FCB /* Pods-CarBooking.debug.xcconfig */;
+			baseConfigurationReference = EEE61250FE0276A324346886F9107702 /* Pods-CarBooking.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -896,6 +1020,44 @@
 			};
 			name = Debug;
 		};
+		956AEBEB11B72EFCCAEF6446BB4C5B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A793D52D4DC55A51FDFE0BA093BEF32 /* Pods-CarBookingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9D93419D942A57EB1F43996AD1B0E867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31AEBE68FB3128988CF77D78E2A0C742 /* Moya.release.xcconfig */;
@@ -931,6 +1093,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		CE92D5C94464D714EDBAD556610134F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C171C9F7FD1361900B47581F84078FB /* Pods-CarBookingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CarBookingTests/Pods-CarBookingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		F95E4C330E939A7027D8A4E361545DBB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1033,6 +1232,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C325323497347E5E51F3586C593BC2D /* Build configuration list for PBXNativeTarget "Pods-CarBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE92D5C94464D714EDBAD556610134F6 /* Debug */,
+				956AEBEB11B72EFCCAEF6446BB4C5B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

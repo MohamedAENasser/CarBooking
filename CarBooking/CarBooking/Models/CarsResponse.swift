@@ -19,7 +19,7 @@ struct Status: Codable {
 }
 
 // MARK: - Car
-struct Car: Codable, Identifiable {
+struct Car: Codable, Identifiable, Equatable {
     let id = UUID()
     let model: Int
     let plateNumber: String
