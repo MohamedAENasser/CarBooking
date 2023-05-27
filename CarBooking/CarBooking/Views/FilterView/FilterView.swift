@@ -66,8 +66,6 @@ struct FilterView: View {
     var contentView: some View {
         HStack(alignment: .top) {
             ZStack(alignment: .top) {
-                Color.cyan.opacity(0.9)
-
                 VStack {
                     List {
 
@@ -78,7 +76,7 @@ struct FilterView: View {
                         userActionsView
 
                     }
-                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                    .padding(.top, 20)
                     .listStyle(.grouped)
                 }
             }
@@ -98,6 +96,7 @@ struct FilterView: View {
             TextField("Minimum", text: $tempFilterCriteria.minPrice)
             TextField("Maximum", text: $tempFilterCriteria.maxPrice)
         }
+        .padding(.top, 15)
         .keyboardType(.numberPad)
         .focused($inputIsFocused)
     }
@@ -130,8 +129,8 @@ struct FilterView: View {
     var applyActionView: some View {
         Text("Apply")
             .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
-            .foregroundColor(Color.white)
-            .background(Color.blue)
+            .foregroundColor(.white)
+            .background(.blue)
             .clipShape(Capsule())
             .onTapGesture {
                 applyFiltersAction()

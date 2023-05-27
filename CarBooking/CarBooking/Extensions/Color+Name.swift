@@ -10,21 +10,21 @@ import SwiftUI
 extension Color {
     static subscript(name: String) -> Color? {
         switch name.lowercased() {
-        case  "red": return Color.red
-        case  "orange": return Color.orange
-        case  "yellow": return Color.yellow
-        case  "green": return Color.green
-        case  "mint": return Color.mint
-        case  "teal": return Color.teal
-        case  "cyan": return Color.cyan
-        case  "blue": return Color.blue
-        case  "indigo": return Color.indigo
-        case  "purple": return Color.purple
-        case  "pink": return Color.pink
-        case  "brown": return Color.brown
-        case  "white": return Color.white
-        case  "gray": return Color.gray
-        case  "black": return Color.black
+        case  "red": return .red
+        case  "orange": return .orange
+        case  "yellow": return .yellow
+        case  "green": return .green
+        case  "mint": return .mint
+        case  "teal": return .teal
+        case  "cyan": return .cyan
+        case  "blue": return .blue
+        case  "indigo": return .indigo
+        case  "purple": return .purple
+        case  "pink": return .pink
+        case  "brown": return .brown
+        case  "white": return .white
+        case  "gray": return .gray
+        case  "black": return .black
 
         default: return nil
         }

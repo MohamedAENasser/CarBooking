@@ -73,7 +73,7 @@ struct CarListView: View {
                 .resizable()
                 .renderingMode(.template)
                 .frame(width: 30, height: 30, alignment: .center)
-                .foregroundColor(viewModel.filterCriteria.noFiltersApplied ? Color.black : Color.blue)
+                .foregroundColor(viewModel.filterCriteria.noFiltersApplied ? .black : .blue)
         }
     }
 }

@@ -46,7 +46,7 @@ struct CarCell: View {
         Text(car.brand)
             .font(Font.title3.bold())
             .padding(6)
-            .background(Color.cyan.opacity(0.3))
+            .background(.cyan.opacity(0.3))
             .clipShape(Capsule(style: .continuous))
     }
 
@@ -64,7 +64,7 @@ struct CarCell: View {
             }
             .carImageStyle()
         }
-        .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+        .padding([.top, .bottom], 10)
     }
 }
 
