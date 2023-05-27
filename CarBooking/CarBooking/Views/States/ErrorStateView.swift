@@ -12,30 +12,26 @@ struct ErrorStateView: View {
     var onTapReTry: () -> Void
 
     var body: some View {
-        ZStack {
-            Color.gray.ignoresSafeArea(.all)
+        VStack {
+            Image("Warning-icon")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .padding(.bottom, 50)
 
-            VStack {
-                Image("Warning-icon")
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                    .padding(.bottom, 50)
+            Text(error.description)
+                .font(.title)
+                .multilineTextAlignment(.center)
 
-                Text(error.description)
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-
-                Button {
-                    onTapReTry()
-                } label: {
-                    Label("Try Again", systemImage: "arrow.counterclockwise")
-                        .labelStyle(.iconOnly)
-                        .foregroundColor(.black)
-                }
-                .buttonStyle(.borderless)
-                .scaleEffect(3)
-                .padding(.top, 20)
+            Button {
+                onTapReTry()
+            } label: {
+                Label("Try Again", systemImage: "arrow.counterclockwise")
+                    .labelStyle(.iconOnly)
+                    .foregroundColor(.black)
             }
+            .buttonStyle(.borderless)
+            .scaleEffect(3)
+            .padding(.top, 20)
         }
     }
 }

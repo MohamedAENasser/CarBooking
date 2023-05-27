@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        Color.gray.ignoresSafeArea(.all)
 
         ProgressView()
             .progressViewStyle(.automatic)

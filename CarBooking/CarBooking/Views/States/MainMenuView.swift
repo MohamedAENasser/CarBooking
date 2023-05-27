@@ -31,8 +31,8 @@ struct MainMenuView: View {
             Text(title)
                 .font(.title)
                 .padding(20)
-                .foregroundColor(.black)
-                .background(Color.gray)
+                .foregroundColor(.white)
+                .background(.blue)
                 .clipShape(Capsule())
         } .simultaneousGesture(TapGesture().onEnded {
             CarBookingTarget.stubFileName = stubFileName
