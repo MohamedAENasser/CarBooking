@@ -40,6 +40,7 @@ struct CarListView: View {
                 await viewModel.getAvailableCars()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 
     func carListView(carList: [Car]) -> some View {
