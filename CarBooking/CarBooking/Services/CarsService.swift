@@ -40,7 +40,11 @@ final class CarsService: CarsServiceProtocol {
 
                     guard case .failure = completion else { return }
 
-                    continuation.resume(returning: .failure(.failedToLoadData))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Simulate loading state
+
+                        continuation.resume(returning: .failure(.failedToLoadData))
+
+                    }
 
                 }, receiveValue: { response in
 
